@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KotkanpoikaMenu</string>
+    <string name="restaurantName">Restaurant Kotkanpoika</string>
+    <string name="lunchTextBox">Lunch</string>
+    <string name="mainDishTextBox">Main dish</string>
+    <string name="sideDishTextBox">Side dish</string>
+    <string name="buttonDate">Select Date</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:background="@drawable/backgroundmenu"
+    tools:context="kotkanpoika.menu.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewRestaurant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/restaurantName"
+        android:textSize="24sp"
+        android:textColor="@color/colorText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="86dp"
+            android:layout_height="48dp"
+            android:background="@drawable/finnishflag"
+            android:id="@+id/buttonFinnish"
+            android:onClick="getFinnishMenu"/>
+
+        <Button
+            android:layout_width="86dp"
+            android:layout_height="48dp"
+            android:background="@drawable/englishflag"
+            android:id="@+id/buttonEnglish"
+            android:onClick="getEnglishMenu"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/buttonDate"
+            android:id="@+id/buttonGetDate"
+            android:onClick="getDate"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewMeals" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:id="@+id/textViewError"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:id="@+id/progressbar" />
+
+</LinearLayout>
